@@ -1,0 +1,94 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	background-color: #fff;
+	color: #666;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 2.0em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	font-weight: 300;
+	color: #666;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+li {
+	font-size: 1.2em;
+	color: #fff;
+}
+
+nav {
+	background-color: #666;
+	box-shadow: 1px 1px 1px #eee;
+	width: 100%;
+	height: 50px;
+	clear: both;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	float: left;
+	color: #333;
+	padding: 15px;
+}
+
+nav ul li a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	color: #666;
+}
+
+.col33 {
+	width: 33%;
+	display: table-cell;
+	color: #333;
+	padding: 20px;
+	border: 10px solid #fff;
+}
+
+.row {
+	width: 100%;
+	display: table;
+	clear: both;
+}
+
+.subheader {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.color-purple {
+	background-color: #8044bb;
+}
+.color-green {
+	background-color: #44bb44;
+}

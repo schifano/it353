@@ -10,20 +10,22 @@ body {
 h1 {
 	font-size: 2.5em;
 	margin-bottom: 10px;
+	color: #666;
 }
 
 h2 {
 	font-size: 2.0em;
+	color: #666;
 }
 
 h3 {
-	font-size: 1.75em;
+	font-size: 1.5em;
+	color: #fff;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	text-align: center;
 	font-weight: 300;
-	color: #666;
 }
 
 img {
@@ -33,6 +35,7 @@ img {
 
 li {
 	font-size: 1.2em;
+	line-height: 1.5;
 	color: #fff;
 }
 
@@ -62,7 +65,8 @@ nav ul li a:link, a:hover, a:active, a:visited {
 }
 
 p {
-	color: #666;
+	color: #fff;
+	line-height: 1.5;
 }
 
 .col33 {
@@ -80,6 +84,7 @@ p {
 }
 
 .subheader {
+	color: #666;
 	font-size: 1.5em;
 	text-align: center;
 	margin: 0;
@@ -87,7 +92,7 @@ p {
 }
 
 .color-purple {
-	background-color: #8044bb;
+	background-color: #666;
 }
 .color-green {
 	background-color: #44bb44;

@@ -143,4 +143,10 @@ and (max-width: 660px) {
 		clear: both;
 		width: auto;
 	}
+	nav ul li {
+		font-size: 1.0em;
+	}
+	pre {
+		font-size: 0.3em;
+	}
 }

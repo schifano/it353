@@ -1,0 +1,143 @@
+<!doctype html>
+<head>
+	<title>Lab 1: Rachel's Personal Home Page</title>
+	<!-- meta tags -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="author" content="Rachel Schifano">
+	<meta name="title" content="Lab 1: Rachel's Personal Home Page">
+	<meta name="description" content="Lab 1 Assignment Rachel's personal home page">
+	<meta name="keywords" content="it 353, lab 1, rachel, home page, web development">
+	<meta charset="utf-8">
+	<!-- styles -->
+	<link href="styles/site_style.css" rel="stylesheet">
+	<!-- scripts -->
+	<script>
+	function greetName() {
+		firstName = prompt("What is your first name?: ");
+		lastName = prompt("What is your last name?");
+		alert("Hello " + lastName + ", " + firstName + "! Welcome to IT 353");
+	}
+	</script>
+</head>
+<body>
+
+<nav>
+	<ul>
+		<li><a href="#about">About</a></li>
+		<li><a href="#faqs">FAQs</a></li>
+		<li><a href="#summaries">Summaries</a></li>
+		<li><a href="#ascii">Ascii</a></li>
+		<li><a href="" onClick="greetName()">Script</a></li>
+	</ul>
+</nav>
+
+<h1>RACHEL A SCHIFANO</h1>
+<p class="subheader">Software Engineer</p>
+
+<div class="row">
+	<div class="col33 color-purple">
+		<img src="images/pitch-team.gif" alt="Rachel and Michal at New Buffalo">
+	</div>
+	<div class="col33 color-green">
+		<img src="images/rachel.png" alt="Rachel Schifano">
+	</div>
+	<div class="col33 color-purple">
+		<img src="images/rachel-matt.gif" alt="Austin Savage">
+	</div>
+</div>
+
+<a id="about"></a>
+<h2>ABOUT</h2>
+
+<div class="row">
+	<div class="col33 color-green">
+		<ul>
+			<li>BS Computer Science, Senior</li>
+			<li>Graduating May 2015</li>
+			<li>From Normal, IL</li>
+			<li>State Farm Systems Intern, 2009-Current</li>
+			<li>LinkedIn</li>
+			<li>Twitter</li>
+			<li>Italian-Filipino-American</li>
+		</ul>
+	</div>
+	<div class="col33 color-purple">
+		<ul>
+			<li>Aspiring DJ</li>
+			<li>Hackathons</li>
+			<li>iOS Development</li>
+			<li>Education</li>
+			<li>Entrepreneurship</li>
+			<li>Fine Art - Drawing</li>
+			<li>Electric Guitar - Metal</li>
+			<li>Viola</li>
+		</ul>
+	</div>
+	<div class="col33 color-green">
+		<ol>
+			<li>GitHub</li>
+			<li>Code School</li>
+			<li>Soundcloud</li>
+		</ol>
+	</div>
+</div>
+
+<a id="faqs"></a>
+<h2>FAQs</h2>
+<div class="row">
+	<div class="col33 color-purple">
+		<h3>Do you have any Java experience? If so, from what course(s)?</h3>
+		<p>IT 168, IT 179, IT 226</p>
+	</div>
+	<div class="col33 color-green">
+		<h3>Do you have any Web development experience? (Built any pages? Used any web development technologies before? etc.) If so, from what course(s)?</h3>
+		<p>Yes, experience. HTML5/CSS3, WCAG 2.0 (accessibility), responsive, some JavaScript/jQuery, Sass, Ruby on Rails, Brunch, Socket.io, Node.js, impress.js, D3js.</p>
+
+		<p>No courses, self-taught through Code School, Codecademy, CodePen, Rails Girls Chicago, Twitter Bootstrap, State Farm Systems Intranet Team (3 years).</p>
+	</div>
+	<div class="col33 color-purple">
+		<h3>Do you have any Database experience? (Used MS Access? Oracle? Comfortable with SQL?) If so, from what course(s)?</h3>
+		<p>No, but I want experience. Taking IT 378 in spring.</p>
+	</div>
+</div>
+
+<a id="summaries"></a>
+<h2>SUMMARIES</h2>
+<div class="row">
+	<div class="col33 color-green">
+		<h3><a href="http://www.computerworld.com/article/2491409/app-development/google-agitates-for-a-revolution-in-web-development.html">Google agitates for a revolution in Web development.</a></h3>
+		<p>Google has been encouraging the adoption of a new World Wide Web Consortium (W3C) standard called web components. Web components allow for greater extensibility similar to Java Enterprise and Microsoft .NET, and it will remove the issue of HTML web page dependencies by extending HTML elements.</p>
+
+		<p>The functionality for web components is already being adopted by several technologies. Corporations researching support for web components include Apple and Microsoft, while Mozilla, Google Chrome 36 and Opera will already support it. Google has also released the concept of Polymer that provides an overview for web components.</p>
+	</div>
+	<div class="col33 color-purple">
+		<h3><a href="http://www.zdnet.com/the-enterprise-technologies-to-watch-in-2014-7000026899/">The enterprise technologies to watch in 2014.</a></h3>
+		<p>There are several emerging technologies that corporations should adopt in order to avoid disruption in the market place. Technologies that allow businesses to align in the modern networked and open society will help companies stay relevant and meet the expectations of their customers.<p>
+
+		<p>Emerging technologies that corporations should watch for in 2014 include: 3D printers that allow corporations to focus on design rather than manufacturing, the Internet of Things (IoT) where all devices  connect in a network, mobile business applications revolutionizing remote support and services, noSQL and relational databases where  products like Hadoop bring enterprise insight through big data, on-demand everything with delivery of any cloud service, Bring-Your-Own-Technology (BYOT) causing competition for tech acquisition, gamification to change approach to business solutions, wearable IT that leads to the quantified enterprise which will provide busines insights. Among others include: virtualization, cloud computing, integrated customer experiences, digital learning and MOOCs, open APIs, business social, global solutions networks, and a collaborative economy.</p>
+	</div>
+	<div class="col33 color-green">
+		<h3><a href="http://www.ibm.com/developerworks/xml/library/x-mashups/index.html">Mashups: The new breed of Web app.</a></h3>
+		<p>Mashups are composed of content from unrelated data sources for people, and are often platform agnostic. They aggregate third-party data and provide some interactivity across the web. An example of a mashup is the ChicagoCrime.org site that integrates Google Maps and the Chicago Police Department database.</p>
+
+		<p>The mashup architecture is made of three components: API/content providers, the mashup site, and the client's Web browser. There are also distinct genres of mashups, including mapping, video and photo, search and shopping, and news mashups. Other technologies used include AJAX, SOAP and REST, screen scraping, semantic web, and RSS and ATOM. However, this architecture often brings up technical challenges such as data integration for semantic meaning and using components. There are many social issues around the idea of mashups due to problems with intellectual property.</p>
+	</div>
+</div>
+
+<a id="ascii"></a>
+<h2>ASCII NYANCAT</h2>
+<pre>
+____━━____━━____━━____━━____┗┓|::::::^━━^
+____━━____━━____━━____━━____━┗|:::::|｡◕‿‿ ◕｡|
+____━━____━━____━━____━━____━━╰O-O----O-O                    
+</pre>
+
+<footer>
+<div id="contact">
+	<p class="contact">email: <a href="mailto:raschif@ilstu.edu">raschif@ilstu.edu</a></p>
+	<hr>
+	<p><em>Adjust your browser size or try me on mobile. My site is responsive!</em></p>
+</div>
+</footer>
+</body>
+</html>

@@ -11,7 +11,7 @@
 	<link href="styles/site_style.css" rel="stylesheet">
 	<!-- scripts -->
 	<script>
-	function greetName() {
+	function calcTestScore() {
 		firstName = prompt("What is your first name?: ");
 		lastName = prompt("What is your last name?");
 		alert("Hello " + lastName + ", " + firstName + "! Welcome to IT 353");
@@ -26,173 +26,199 @@
 		<li><a href="#faqs">FAQs</a></li>
 		<li><a href="#summaries">Summaries</a></li>
 		<li><a href="#ascii">Ascii</a></li>
-		<li><a href="" onClick="greetName()">Script</a></li>
 	</ul>
 </nav>
 
 
-
-<h2>Registration Form</h2>
-<form method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
-
-<!-- Password -->
-Password: <input type="password" name="passwrd"><br>
-<!-- Check Box -->
-<input type="checkbox" name="vehicle" value="Bike">I have a bike<br>
-<input type="checkbox" name="vehicle" value="Car">I have a car <br>
-
-<!-- Radio Button -->
-Preferred tour times:<br>
-  <label for="male">Male</label>
-  <input type="radio" name="sex" id="male" value="male"><br>
-  <label for="female">Female</label>
-  <input type="radio" name="sex" id="female" value="female"><br>
-
-<!-- Select, dropdown -->
-<select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-
-<!-- Hidden field, submit value for user -->
-<input type="hidden" name="Language" value="English">
-
-<!-- Multiple line text input -->
-Comments: <textarea></textarea><br>
-
-
-<!-- Submit Button -->
-<input type="submit" value="submit">
-<!-- Reset Button -->
-<input type="reset" value="reset">
-</form>
-
-
-<!-- must be VPN to work on submission
-<form method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
--->
-
-
-
-
-
-
-
-
+<h1>Assignment 1</h1>
 
 
 <!--
-<h1>RACHEL A SCHIFANO</h1>
-<p class="subheader">Software Engineer</p>
+<form name=musicForm method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
 
-<div class="row">
-	<div class="col33 color-purple">
-		<img src="images/pitch-team.gif" alt="Rachel and Michal at New Buffalo">
-	</div>
-	<div class="col33 color-green">
-		<img src="images/rachel.png" alt="Rachel Schifano">
-	</div>
-	<div class="col33 color-purple">
-		<img src="images/rachel-matt.gif" alt="Austin Savage">
-	</div>
-</div>
+<INPUT TYPE="radio" NAME="musicChoice" VALUE="soul-and-r&b"
+   onClick="musicForm.catalog.value = 'soul-and-r&b'"> Soul and R&B<br>
+<INPUT TYPE="radio" NAME="musicChoice" VALUE="jazz"
+   onClick="musicForm.catalog.value = 'jazz'"> Jazz<br>
+<INPUT TYPE="radio" NAME="musicChoice" VALUE="classical"
+   onClick="musicForm.catalog.value = 'classical'"> Classical<br>
+<BR> Selected Music:
+<INPUT TYPE="text" NAME="catalog" SIZE="20">
+<input type="submit">
+</form>
+-->
 
-<a id="about"></a>
-<h2>ABOUT</h2>
+<form name="hackForm" method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
+<h2><span class="red">Redbird</span><span class="gray">Hacks</span></h2>
+<h3>Registration Form</h3>
+<!-- Name -->
+Name:
+<input type="text" name="first-name">
+<input type="text" name="last-name"><br><br>
+<!-- Password -->
+Password: <input type="password" name="pw"><br>
+<!-- Check Box -->
+<p>Where did you hear about our hackathon?</p>
+<input type="checkbox" name="ad1" value="acm">ACM<br>
+<input type="checkbox" name="ad2" value="fb">Facebook<br>
+<input type="checkbox" name="ad3" value="twitter">Twitter<br>
+<input type="checkbox" name="ad4" value="friend">Friend<br>
+<input type="checkbox" name="ad5" value="email">Email<br>
+Other, please specify: <input type="text" name="other"><br>
 
-<div class="row">
-	<div class="col33 color-green">
+<!-- Radio Button -->
+<p>Travel Arrangements</p>
+	<input type="radio" name="travel" id="bus" value="bus">
+  <label for="bus">I would like to ride a hackathon bus.</label><br>
+	<input type="radio" name="travel" id="own" value="self-transportation">
+  <label for="own">I will provide my own transportation.</label><br>
+	<input type="radio" name="travel" id="campus" value="campus">
+  <label for="campus">I am already in Bloomington-Normal, IL.</label>
+
+<!-- Select, dropdown -->
+<p>Shirt size</p>
+<select id="size" name="size">
+  <option value="small">S</option>
+  <option value="medium">M</option>
+  <option value="large">L</option>
+  <option value="extra-large">XL</option>
+</select>
+
+<!-- Hidden field, submit value for user -->
+<input type="hidden" id="language" name="language" value="English">
+
+<!-- Multiple line text input -->
+<p>Additional hackers on your team (list emails)</p>
+<textarea name="team" id="team" value="team"></textarea><br>
+
+<!-- Submit Button -->
+<input type="submit" value="Submit">
+<!-- Reset Button -->
+<input type="reset" value="Reset">
+</form>
+
+<section class="box">
+<h2>Table of Corporate Sponsors</h2>
+<table>
+	<tr>
+		<th scope="col">COMPANY</th>
+		<th scope="col">LOCATION</th>
+		<th scope="col">INTERNSHIPS</th>
+		<th scope="col">PREVIOUS HACKATHON SPONSOR</th>
+		<th scope="col">PUBLIC API</th>
+	</tr>
+	<tr>
+		<td colspan="5" class="bkg-row">ISU Established</td>
+	</tr>
+	<tr class="bkg-white">
+		<td>Caterpillar</td>
+		<td>Peoria, IL</td>
+		<td>Yes</td>
+		<td>No</td>
+		<td>No</td>
+	</tr>
+￼￼<tr class="bkg-light">
+		<td>Country Financial</td>
+		<td>Bloomington, IL</td>
+		<td>Yes</td>
+		<td>No</td>
+		<td>No</td>
+	</tr>
+	<tr class="bkg-white">
+		<td>Discover</td>
+		<td>Riverwoods, IL</td>
+		<td>Yes</td>
+		<td>No</td>
+		<td>No</td>
+	</tr>
+	<tr class="bkg-light">
+		<td rowspan="2">State Farm</td>
+		<td>Bloomington, IL</td>
+		<td>Yes</td>
+		<td>Yes</td>
+		<td>No</td>
+	</tr>
+	<tr class="bkg-light">
+		<td>Chicago, IL</td>
+		<td>Yes</td>
+		<td>Yes</td>
+		<td>No</td>
+	</tr>
+￼￼<tr class="bkg-white">
+		<td>John Deere</td>
+		<td>Moline, IL</td>
+		<td>Yes</td>
+		<td>Yes</td>
+		<td>Yes</td>
+	</tr>
+</table>
+</section>
+
+<section class="box">
+<h2>Alternative Style Sheet!!!!!</h2>
+<p>Visit the alternately styled version of this <a href="assign1_styles.htm">page</a>.</p>
+
+<ol>
+	<li>Backround image: Mario</li>
+	<li>Table heading
 		<ul>
-			<li>BS Computer Science, Senior</li>
-			<li>Graduating May 2015</li>
-			<li>From Normal, IL</li>
-			<li>State Farm Systems Intern, 2009-Current</li>
-			<li>LinkedIn</li>
-			<li>Twitter</li>
-			<li>Italian-Filipino-American</li>
+			<li>font color: yellow</li>
+			<li>font size: 14 pt</li>
+			<li>background color: blue</li>
 		</ul>
-	</div>
-	<div class="col33 color-purple">
-		<ul>
-			<li>Aspiring DJ</li>
-			<li>Hackathons</li>
-			<li>iOS Development</li>
-			<li>Education</li>
-			<li>Entrepreneurship</li>
-			<li>Fine Art - Drawing</li>
-			<li>Electric Guitar - Metal</li>
-			<li>Viola</li>
-		</ul>
-	</div>
-	<div class="col33 color-green">
-		<ol>
-			<li>GitHub</li>
-			<li>Code School</li>
-			<li>Soundcloud</li>
-		</ol>
-	</div>
-</div>
+	<li>Div tag class=&quote;effect&quot;: animate...</li>
+</ol>
+</section>
 
-<a id="faqs"></a>
-<h2>FAQs</h2>
-<div class="row">
-	<div class="col33 color-purple">
-		<h3>Do you have any Java experience? If so, from what course(s)?</h3>
-		<p>IT 168, IT 179, IT 226</p>
-	</div>
-	<div class="col33 color-green">
-		<h3>Do you have any Web development experience? (Built any pages? Used any web development technologies before? etc.) If so, from what course(s)?</h3>
-		<p>Yes, experience. HTML5/CSS3, WCAG 2.0 (accessibility), responsive, some JavaScript/jQuery, Sass, Ruby on Rails, Brunch, Socket.io, Node.js, impress.js, D3js.</p>
+<section class="box">
+<h2>Five HTML5 Features</h2>
+<ol>
+	<li>&lt;nav&gt;</li>
+	<li>&lt;footer&gt;</li>
+	<li>&lt;canvas&gt;</li>
+	<li></li>
+	<li></li>
+</ol>
+</section>
 
-		<p>No courses, self-taught through Code School, Codecademy, CodePen, Rails Girls Chicago, Twitter Bootstrap, State Farm Systems Intranet Team (3 years).</p>
-	</div>
-	<div class="col33 color-purple">
-		<h3>Do you have any Database experience? (Used MS Access? Oracle? Comfortable with SQL?) If so, from what course(s)?</h3>
-		<p>No, but I want experience. Taking IT 378 in spring.</p>
-	</div>
-</div>
+<section class="box">
+	<h2>JavaScript</h2>
+	<ol>
+		<li><a href="" onClick="calcTestScore()">Calculate N Test Scores</a></li>
+	</ol>
+</section>
 
-<a id="summaries"></a>
-<h2>SUMMARIES</h2>
-<div class="row">
-	<div class="col33 color-green">
-		<h3><a href="http://www.computerworld.com/article/2491409/app-development/google-agitates-for-a-revolution-in-web-development.html">Google agitates for a revolution in Web development.</a></h3>
-		<p>Google has been encouraging the adoption of a new World Wide Web Consortium (W3C) standard called web components. Web components allow for greater extensibility similar to Java Enterprise and Microsoft .NET, and it will remove the issue of HTML web page dependencies by extending HTML elements.</p>
+<section class="box">
+<h2>Short Answers</h2>
 
-		<p>The functionality for web components is already being adopted by several technologies. Corporations researching support for web components include Apple and Microsoft, while Mozilla, Google Chrome 36 and Opera will already support it. Google has also released the concept of Polymer that provides an overview for web components.</p>
-	</div>
-	<div class="col33 color-purple">
-		<h3><a href="http://www.zdnet.com/the-enterprise-technologies-to-watch-in-2014-7000026899/">The enterprise technologies to watch in 2014.</a></h3>
-		<p>There are several emerging technologies that corporations should adopt in order to avoid disruption in the market place. Technologies that allow businesses to align in the modern networked and open society will help companies stay relevant and meet the expectations of their customers.<p>
+<p>What does ARIA stand for? What problem of the Web does it address, and how does it do it?</p>
 
-		<p>Emerging technologies that corporations should watch for in 2014 include: 3D printers that allow corporations to focus on design rather than manufacturing, the Internet of Things (IoT) where all devices  connect in a network, mobile business applications revolutionizing remote support and services, noSQL and relational databases where  products like Hadoop bring enterprise insight through big data, on-demand everything with delivery of any cloud service, Bring-Your-Own-Technology (BYOT) causing competition for tech acquisition, gamification to change approach to business solutions, wearable IT that leads to the quantified enterprise which will provide busines insights. Among others include: virtualization, cloud computing, integrated customer experiences, digital learning and MOOCs, open APIs, business social, global solutions networks, and a collaborative economy.</p>
-	</div>
-	<div class="col33 color-green">
-		<h3><a href="http://www.ibm.com/developerworks/xml/library/x-mashups/index.html">Mashups: The new breed of Web app.</a></h3>
-		<p>Mashups are composed of content from unrelated data sources for people, and are often platform agnostic. They aggregate third-party data and provide some interactivity across the web. An example of a mashup is the ChicagoCrime.org site that integrates Google Maps and the Chicago Police Department database.</p>
+<p>ARIA is also known as WAI-ARIA, which stands for Accessible Rich Internet Applications Suite. ARIA is used to make web applications more accessible for differently-abled individuals using the Internet with accessible technologies (ex: screen readers).
 
-		<p>The mashup architecture is made of three components: API/content providers, the mashup site, and the client's Web browser. There are also distinct genres of mashups, including mapping, video and photo, search and shopping, and news mashups. Other technologies used include AJAX, SOAP and REST, screen scraping, semantic web, and RSS and ATOM. However, this architecture often brings up technical challenges such as data integration for semantic meaning and using components. There are many social issues around the idea of mashups due to problems with intellectual property.</p>
-	</div>
-</div>
+ARIA addresses Web accessibility issues by 
 
-<a id="ascii"></a>
-<h2>ASCII NYANCAT</h2>
-<pre>
-____━━____━━____━━____━━____┗┓|::::::^━━^
-____━━____━━____━━____━━____━┗|:::::|｡◕‿‿ ◕｡|
-____━━____━━____━━____━━____━━╰O-O----O-O                    
-</pre>
+<sup>1</sup></p>
+
+<p>What is search engine optimization (SEO) and why is it important?</p>
+
+<p>What is Cloud Computing and how is it different from the traditional computing involving data centers, etc.?</p>
+
+<p>What is LAMP Stack? Give a benefit of using LAMP in a business.</p>
+
+<p>What is a Web (Application) Framework? Name 3 examples of this.</p>
+
+<h3>References</h3>
+<ol>
+	<li><a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</a></li>
+	<li><a href=""></a></li>
+</ol>
+</section>
 
 <footer>
 <div id="contact">
 	<p class="contact">email: <a href="mailto:raschif@ilstu.edu">raschif@ilstu.edu</a></p>
 	<hr>
-	<p><em>Adjust your browser size or try me on mobile. My site is responsive!</em></p>
 </div>
 </footer>
-
--->
 </body>
 </html>

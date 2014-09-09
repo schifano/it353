@@ -1,24 +1,75 @@
+/* Form */
+form {
+	background-color: #fff;
+	border: 1px solid #333;
+	border-radius: 10px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+form h2 {
+	margin: 0;
+	font-size: 2.8em;
+}
+form h3 {
+	margin: 0 0 10px 0;
+}
+
+/* Table */
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+td {
+	padding: 7px;
+}
+th {
+	background-color: #a60000;
+	color: #fff;
+	padding: 7px;
+	text-align: center;
+	font-weight: normal;
+}
+.bkg-row {
+	background-color: #a60000;
+	color: #fff;
+	text-align: center;
+	padding: 7px;
+}
+.bkg-light {
+	background-color: #f2f0ed;
+}
+.bkg-white {
+	background-color: #fff;	
+}
+
+
+
 #contact {
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
 }
-
 a:link {
 	text-decoration: none;
-	color: #fff;
+	color: #a60000;
 }
 
 a:hover {
 	color: #CE706D;
 }
+a:visited {
+	text-decoration: none;
+	color: #a60000 !important;
+}
 
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
-	background-color: #fff;
-	color: #666;
+	background-color: #ccc;
+	color: #333;
 	margin: 0;
 	padding: 0;
 }
@@ -33,19 +84,19 @@ footer {
 }
 
 h1 {
-	font-size: 2.5em;
-	margin-bottom: 10px;
+	font-size: 3.0em;
+	margin: 30px;
 	color: #666;
 }
 
 h2 {
-	font-size: 2.0em;
+	font-size: 2.5em;
 	color: #666;
 }
 
 h3 {
-	font-size: 1.5em;
-	color: #fff;
+	font-size: 2.0em;
+	color: #666;
 }
 
 h1, h2, h3 {
@@ -59,9 +110,7 @@ img {
 }
 
 li {
-	font-size: 1.2em;
 	line-height: 1.5;
-	color: #fff;
 }
 
 nav {
@@ -86,18 +135,24 @@ nav ul li {
 
 nav ul li a:link, a:active, a:visited {
 	text-decoration: none;
-	color: #fff;
 }
 
 p {
-	color: #fff;
 	line-height: 1.5;
 }
 
 pre {
 	color: #CE706D;
 }
-
+.box {
+	padding: 20px;
+	background-color: #fff;
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .color-purple {
 	background-color: #666;
 }
@@ -132,6 +187,14 @@ pre {
 	text-align: center;
 	margin: 0;
 	padding-bottom: 20px;
+}
+
+/* Font colors */
+.red {
+	color: #a60000;
+}
+.gray {
+	color: #333;
 }
 
 /* Media styles */

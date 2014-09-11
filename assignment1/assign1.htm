@@ -10,43 +10,26 @@
 	<!-- styles -->
 	<link href="styles/site_style.css" rel="stylesheet">
 	<!-- scripts -->
-	<script>
-	function calcTestScore() {
-		firstName = prompt("What is your first name?: ");
-		lastName = prompt("What is your last name?");
-		alert("Hello " + lastName + ", " + firstName + "! Welcome to IT 353");
-	}
-	</script>
+	<script src="scripts/calcTestScores.js"></script>
+	<script src="scripts/computeTotalPay.js"></script>
+	<script src="scripts/displayPage.js"></script>
+
 </head>
 <body>
 
 <nav>
 	<ul>
-		<li><a href="#about">About</a></li>
-		<li><a href="#faqs">FAQs</a></li>
-		<li><a href="#summaries">Summaries</a></li>
-		<li><a href="#ascii">Ascii</a></li>
+		<li><a href="">Echo Form</a></li>
+		<li><a href="">Table</a></li>
+		<li><a href="">Alternate CSS</a></li>
+		<li><a href="">HTML5 Features</a></li>
+		<li><a href="">JavaScript</a></li>
+		<li><a href="">Short Answer</a></li>
 	</ul>
 </nav>
 
 
 <h1>Assignment 1</h1>
-
-
-<!--
-<form name=musicForm method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
-
-<INPUT TYPE="radio" NAME="musicChoice" VALUE="soul-and-r&b"
-   onClick="musicForm.catalog.value = 'soul-and-r&b'"> Soul and R&B<br>
-<INPUT TYPE="radio" NAME="musicChoice" VALUE="jazz"
-   onClick="musicForm.catalog.value = 'jazz'"> Jazz<br>
-<INPUT TYPE="radio" NAME="musicChoice" VALUE="classical"
-   onClick="musicForm.catalog.value = 'classical'"> Classical<br>
-<BR> Selected Music:
-<INPUT TYPE="text" NAME="catalog" SIZE="20">
-<input type="submit">
-</form>
--->
 
 <form name="hackForm" method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
 <h2><span class="red">Redbird</span><span class="gray">Hacks</span></h2>
@@ -155,7 +138,7 @@ Other, please specify: <input type="text" name="other"><br>
 </section>
 
 <section class="box">
-<h2>Alternative Style Sheet!!!!!</h2>
+<h2>Alternate CSS</h2>
 <p>Visit the alternately styled version of this <a href="assign1_styles.htm">page</a>.</p>
 
 <ol>
@@ -171,7 +154,7 @@ Other, please specify: <input type="text" name="other"><br>
 </section>
 
 <section class="box">
-<h2>Five HTML5 Features</h2>
+<h2>HTML5 Features</h2>
 <ol>
 	<li>&lt;nav&gt;</li>
 	<li>&lt;footer&gt;</li>
@@ -184,7 +167,21 @@ Other, please specify: <input type="text" name="other"><br>
 <section class="box">
 	<h2>JavaScript</h2>
 	<ol>
-		<li><a href="" onClick="calcTestScore()">Calculate N Test Scores</a></li>
+		<li><a onClick="calcTestScores()">Calculate N Test Scores</a>
+			<ul>
+				<li><img src="images/output1.png" alt="Output 1"></li>
+				<li><img src="images/output2.png" alt="Output 2"></li>
+			</ul>
+		</li>
+		<li><a onClick="computeTotalPay()">Compute Total Pay</a>
+			<ul>
+				<li><img src="images/output3.png" alt="Output 3"></li>
+				<li><img src="images/output4.png" alt="Output 4"></li>
+				<li><img src="images/output5.png" alt="Output 5"></li>
+			</ul>
+		</li>
+		<li><a onClick="displayPage()">Display Page</a> (Note: When it is exactly 8:00AM, the business hours page shows because that is when stores open. Otherwise, since 5:00PM is the closing time, when it is EXACTLY 5:00PM, the off-hours page shows.)</li>
+		<li><a href="form-validation.html">Form Validation</a></li>
 	</ol>
 </section>
 

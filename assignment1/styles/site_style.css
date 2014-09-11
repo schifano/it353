@@ -52,13 +52,16 @@ th {
 	margin-right: auto;
 	padding: 20px;
 }
+a {
+	color: #a60000;
+}
 a:link {
 	text-decoration: none;
 	color: #a60000;
 }
 
 a:hover {
-	color: #CE706D;
+	color: #a60000;
 }
 a:visited {
 	text-decoration: none;
@@ -85,7 +88,7 @@ footer {
 
 h1 {
 	font-size: 3.0em;
-	margin: 30px;
+	margin: 20px 0 0 0;
 	color: #666;
 }
 
@@ -114,11 +117,10 @@ li {
 }
 
 nav {
-	background-color: #666;
-	box-shadow: 1px 1px 1px #eee;
 	width: 100%;
 	height: 60px;
 	clear: both;
+	text-align: center;
 }
 
 nav ul {
@@ -131,19 +133,18 @@ nav ul li {
 	float: left;
 	color: #333;
 	padding: 15px;
+	display: inline-block;
 }
 
-nav ul li a:link, a:active, a:visited {
+nav ul li a:link, a:active, a:visited, a:hover {
 	text-decoration: none;
+	font-size: 1.5em;
 }
 
 p {
 	line-height: 1.5;
 }
 
-pre {
-	color: #CE706D;
-}
 .box {
 	padding: 20px;
 	background-color: #fff;
@@ -153,13 +154,6 @@ pre {
 	margin-left: auto;
 	margin-right: auto;
 }
-.color-purple {
-	background-color: #666;
-}
-
-.color-green {
-	background-color: #CE706D;
-}
 
 .contact {
 	font-size: 1.5em;
@@ -167,26 +161,10 @@ pre {
 	margin: 0;
 }
 
-.col33 {
-	width: 33%;
-	display: table-cell;
-	color: #333;
-	padding: 20px;
-	border: 10px solid #fff;
-}
-
 .row {
 	width: 100%;
 	display: table;
 	clear: both;
-}
-
-.subheader {
-	color: #666;
-	font-size: 1.5em;
-	text-align: center;
-	margin: 0;
-	padding-bottom: 20px;
 }
 
 /* Font colors */
@@ -208,8 +186,5 @@ and (max-width: 660px) {
 	}
 	nav ul li {
 		font-size: 0.8em;
-	}
-	pre {
-		font-size: 0.3em;
 	}
 }

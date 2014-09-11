@@ -4,8 +4,8 @@
 	<!-- meta tags -->
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="author" content="Rachel Schifano">
-	<meta name="description" content="Lab 1 Assignment Rachel's personal home page">
-	<meta name="keywords" content="it 353, lab 1, rachel, home page, web development">
+	<meta name="description" content="Assignment 1">
+	<meta name="keywords" content="it 353, assignment 1, web development">
 	<meta charset="utf-8">
 	<!-- styles -->
 	<link href="styles/site_style.css" rel="stylesheet">
@@ -17,26 +17,25 @@
 </head>
 <body>
 
+<h1>Assignment 1</h1>
 <nav>
 	<ul>
-		<li><a href="">Echo Form</a></li>
-		<li><a href="">Table</a></li>
-		<li><a href="">Alternate CSS</a></li>
-		<li><a href="">HTML5 Features</a></li>
-		<li><a href="">JavaScript</a></li>
-		<li><a href="">Short Answer</a></li>
+		<li><a href="#echo">Echo Form</a></li>
+		<li><a href="#table">Table</a></li>
+		<li><a href="#css">Alternate CSS</a></li>
+		<li><a href="#html5">HTML5 Features</a></li>
+		<li><a href="#js">JavaScript</a></li>
+		<li><a href="#ans">Short Answer</a></li>
 	</ul>
 </nav>
 
-
-<h1>Assignment 1</h1>
-
+<a id="echo"></a>
 <form name="hackForm" method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
 <h2><span class="red">Redbird</span><span class="gray">Hacks</span></h2>
 <h3>Registration Form</h3>
 <!-- Name -->
 Name:
-<input type="text" name="first-name">
+<input type="text" name="first-name" autofocus>
 <input type="text" name="last-name"><br><br>
 <!-- Password -->
 Password: <input type="password" name="pw"><br>
@@ -81,6 +80,7 @@ Other, please specify: <input type="text" name="other"><br>
 </form>
 
 <section class="box">
+<a id="table"></a>
 <h2>Table of Corporate Sponsors</h2>
 <table>
 	<tr>
@@ -138,33 +138,36 @@ Other, please specify: <input type="text" name="other"><br>
 </section>
 
 <section class="box">
+<a id="css"></a>
 <h2>Alternate CSS</h2>
 <p>Visit the alternately styled version of this <a href="assign1_styles.htm">page</a>.</p>
 
 <ol>
-	<li>Backround image: Mario</li>
+	<li>Backround image: Pusheen the Cat</li>
 	<li>Table heading
 		<ul>
 			<li>font color: yellow</li>
 			<li>font size: 14 pt</li>
 			<li>background color: blue</li>
 		</ul>
-	<li>Div tag class=&quote;effect&quot;: animate...</li>
+	<li>Div effect: Turn div into a big purple circle with a green shadow using the class ".circularize"</li>
 </ol>
 </section>
 
 <section class="box">
+<a id="html5"></a>	
 <h2>HTML5 Features</h2>
 <ol>
 	<li>&lt;nav&gt;</li>
 	<li>&lt;footer&gt;</li>
-	<li>&lt;canvas&gt;</li>
-	<li></li>
-	<li></li>
+	<li>&lt;section&gt;</li>
+	<li>required attribute on validation form</li>
+	<li>autofocus attribute on registration form</li>
 </ol>
 </section>
 
 <section class="box">
+<a id="js"></a>
 	<h2>JavaScript</h2>
 	<ol>
 		<li><a onClick="calcTestScores()">Calculate N Test Scores</a>
@@ -186,6 +189,7 @@ Other, please specify: <input type="text" name="other"><br>
 </section>
 
 <section class="box">
+<a id="ans"></a>	
 <h2>Short Answers</h2>
 
 <p>What does ARIA stand for? What problem of the Web does it address, and how does it do it?</p>

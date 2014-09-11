@@ -1,13 +1,17 @@
 body {
-	background-image: url();
-}
-
-.change {
-
+	background-image: url('../images/pusheen.png');
 }
 
 th {
 	font-size: 14pt;
 	color: #ffff00;
 	background-color: #0000ff;
+}
+
+.circularize {
+	height: 400px;
+	width: 400px;
+	background-color: #8044bb;
+	border-radius: 100%;
+	box-shadow: 10px 10px 5px #44bb44;
 }

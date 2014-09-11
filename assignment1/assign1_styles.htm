@@ -1,16 +1,227 @@
 <!doctype html>
 <head>
-	<title>Assignment 1</title>
-	<!-- Alternate CSS -->
+	<title>Assignment 1: Rachel Schifano</title>
+	<!-- meta tags -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="author" content="Rachel Schifano">
+	<meta name="description" content="Assignment 1">
+	<meta name="keywords" content="it 353, assignment 1, web development">
+	<meta charset="utf-8">
+	<!-- styles -->
 	<link href="styles/site_style2.css" rel="stylesheet">
+	<!-- scripts -->
+	<script src="scripts/calcTestScores.js"></script>
+	<script src="scripts/computeTotalPay.js"></script>
+	<script src="scripts/displayPage.js"></script>
+
 </head>
 <body>
 
+<nav>
+	<ul>
+		<li><a href="#echo">Echo Form</a></li>
+		<li><a href="#table">Table</a></li>
+		<li><a href="#css">Alternate CSS</a></li>
+		<li><a href="#html5">HTML5 Features</a></li>
+		<li><a href="#js">JavaScript</a></li>
+		<li><a href="#ans">Short Answer</a></li>
+	</ul>
+</nav>
 
 
+<h1>Assignment 1</h1>
 
+<a id="echo"></a>
+<form name="hackForm" method="get" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
+<h2><span class="red">Redbird</span><span class="gray">Hacks</span></h2>
+<h3>Registration Form</h3>
+<!-- Name -->
+Name:
+<input type="text" name="first-name">
+<input type="text" name="last-name"><br><br>
+<!-- Password -->
+Password: <input type="password" name="pw"><br>
+<!-- Check Box -->
+<p>Where did you hear about our hackathon?</p>
+<input type="checkbox" name="ad1" value="acm">ACM<br>
+<input type="checkbox" name="ad2" value="fb">Facebook<br>
+<input type="checkbox" name="ad3" value="twitter">Twitter<br>
+<input type="checkbox" name="ad4" value="friend">Friend<br>
+<input type="checkbox" name="ad5" value="email">Email<br>
+Other, please specify: <input type="text" name="other"><br>
 
+<!-- Radio Button -->
+<p>Travel Arrangements</p>
+	<input type="radio" name="travel" id="bus" value="bus">
+  <label for="bus">I would like to ride a hackathon bus.</label><br>
+	<input type="radio" name="travel" id="own" value="self-transportation">
+  <label for="own">I will provide my own transportation.</label><br>
+	<input type="radio" name="travel" id="campus" value="campus">
+  <label for="campus">I am already in Bloomington-Normal, IL.</label>
 
+<!-- Select, dropdown -->
+<p>Shirt size</p>
+<select id="size" name="size">
+  <option value="small">S</option>
+  <option value="medium">M</option>
+  <option value="large">L</option>
+  <option value="extra-large">XL</option>
+</select>
 
+<!-- Hidden field, submit value for user -->
+<input type="hidden" id="language" name="language" value="English">
+
+<!-- Multiple line text input -->
+<p>Additional hackers on your team (list emails)</p>
+<textarea name="team" id="team" value="team"></textarea><br>
+
+<!-- Submit Button -->
+<input type="submit" value="Submit">
+<!-- Reset Button -->
+<input type="reset" value="Reset">
+</form>
+
+<section class="box">
+<a id="table"></a>
+<h2>Table of Corporate Sponsors</h2>
+<table>
+	<tr>
+		<th scope="col">COMPANY</th>
+		<th scope="col">LOCATION</th>
+		<th scope="col">INTERNSHIPS</th>
+		<th scope="col">PREVIOUS HACKATHON SPONSOR</th>
+		<th scope="col">PUBLIC API</th>
+	</tr>
+	<tr>
+		<td colspan="5" class="bkg-row">ISU Established</td>
+	</tr>
+	<tr class="bkg-white">
+		<td>Caterpillar</td>
+		<td>Peoria, IL</td>
+		<td>Yes</td>
+		<td>No</td>
+		<td>No</td>
+	</tr>
+￼￼<tr class="bkg-light">
+		<td>Country Financial</td>
+		<td>Bloomington, IL</td>
+		<td>Yes</td>
+		<td>No</td>
+		<td>No</td>
+	</tr>
+	<tr class="bkg-white">
+		<td>Discover</td>
+		<td>Riverwoods, IL</td>
+		<td>Yes</td>
+		<td>No</td>
+		<td>No</td>
+	</tr>
+	<tr class="bkg-light">
+		<td rowspan="2">State Farm</td>
+		<td>Bloomington, IL</td>
+		<td>Yes</td>
+		<td>Yes</td>
+		<td>No</td>
+	</tr>
+	<tr class="bkg-light">
+		<td>Chicago, IL</td>
+		<td>Yes</td>
+		<td>Yes</td>
+		<td>No</td>
+	</tr>
+￼￼<tr class="bkg-white">
+		<td>John Deere</td>
+		<td>Moline, IL</td>
+		<td>Yes</td>
+		<td>Yes</td>
+		<td>Yes</td>
+	</tr>
+</table>
+</section>
+
+<section class="box">
+<a id="css"></a>
+<h2>Alternate CSS</h2>
+<p>Visit the alternately styled version of this <a href="assign1_styles.htm">page</a>.</p>
+
+<ol>
+	<li>Backround image: Pusheen the Cat</li>
+	<li>Table heading
+		<ul>
+			<li>font color: yellow</li>
+			<li>font size: 14 pt</li>
+			<li>background color: blue</li>
+		</ul>
+	<li>Div effect: Turn div into a big purple circle with a green shadow using the class ".circularize"</li>
+</ol>
+</section>
+
+<section class="box">
+<a id="html5"></a>	
+<h2>HTML5 Features</h2>
+<ol>
+	<li>&lt;nav&gt;</li>
+	<li>&lt;footer&gt;</li>
+	<li>&lt;canvas&gt;</li>
+	<li></li>
+	<li></li>
+</ol>
+</section>
+
+<section class="box">
+<a id="js"></a>
+	<h2>JavaScript</h2>
+	<ol>
+		<li><a onClick="calcTestScores()">Calculate N Test Scores</a>
+			<ul>
+				<li><img src="images/output1.png" alt="Output 1"></li>
+				<li><img src="images/output2.png" alt="Output 2"></li>
+			</ul>
+		</li>
+		<li><a onClick="computeTotalPay()">Compute Total Pay</a>
+			<ul>
+				<li><img src="images/output3.png" alt="Output 3"></li>
+				<li><img src="images/output4.png" alt="Output 4"></li>
+				<li><img src="images/output5.png" alt="Output 5"></li>
+			</ul>
+		</li>
+		<li><a onClick="displayPage()">Display Page</a> (Note: When it is exactly 8:00AM, the business hours page shows because that is when stores open. Otherwise, since 5:00PM is the closing time, when it is EXACTLY 5:00PM, the off-hours page shows.)</li>
+		<li><a href="form-validation.html">Form Validation</a></li>
+	</ol>
+</section>
+
+<section class="box">
+<a id="ans"></a>	
+<h2>Short Answers</h2>
+
+<p>What does ARIA stand for? What problem of the Web does it address, and how does it do it?</p>
+
+<p>ARIA is also known as WAI-ARIA, which stands for Accessible Rich Internet Applications Suite. ARIA is used to make web applications more accessible for differently-abled individuals using the Internet with accessible technologies (ex: screen readers).
+
+ARIA addresses Web accessibility issues by 
+
+<sup>1</sup></p>
+
+<p>What is search engine optimization (SEO) and why is it important?</p>
+
+<p>What is Cloud Computing and how is it different from the traditional computing involving data centers, etc.?</p>
+
+<p>What is LAMP Stack? Give a benefit of using LAMP in a business.</p>
+
+<p>What is a Web (Application) Framework? Name 3 examples of this.</p>
+
+<h3>References</h3>
+<ol>
+	<li><a href="http://www.w3.org/WAI/intro/aria">WAI-ARIA Overview</a></li>
+	<li><a href=""></a></li>
+</ol>
+</section>
+
+<footer>
+<div id="contact">
+	<p class="contact">email: <a href="mailto:raschif@ilstu.edu">raschif@ilstu.edu</a></p>
+	<hr>
+</div>
+</footer>
 </body>
 </html>

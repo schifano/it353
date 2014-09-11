@@ -144,7 +144,9 @@ nav ul li a:link, a:active, a:visited, a:hover {
 p {
 	line-height: 1.5;
 }
-
+.a {
+	font-size: 1.2em;
+}
 .box {
 	padding: 20px;
 	background-color: #fff;

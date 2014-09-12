@@ -24,12 +24,9 @@
 	<!-- select for age range -->
 	<select required>
 		<option value="">Select an age range</option>
-		<option value="range1">18-24</option>
-		<option value="range2">25-33</option>
-		<option value="range3">34-44</option>
-		<option value="range4">45-54</option>
-		<option value="range5">54-65</option>
-		<option value="range6">66 or older</option>
+		<option value="range1">Below 18</option>
+		<option value="range2">18-39</option>
+		<option value="range3">40 or above</option>
 	</select>
 
 	<!-- submit and reset buttons --><br>
@@ -45,8 +42,6 @@
 </html>
 <!--
 (c) [14 pts] For email, the two criteria for valid format are as follows. (i) First, make sure there is only one @ sign and that it is not at the beginning or end of the address. (ii) Second, ensure that there is at least one period that appears after the @ sign (but not immediately after) in the address and any periods are not at the beginning or end of the address. Note that it is OK to have a period anywhere before the @ sign for the purpose of this question. 
-
-(d) [5 pts] For age range, present the options ("Select Age ...","Below 18","18-39","40 or above") as a drop-down list (select object). The user must choose one of the age ranges (i.e., not the "Select Age ..." option).
 
 (e) [5 pts] If the above format is not followed, give appropriate alert responses (e.g., "period cannot appear immediately after @"; no generic messages!) and abort the submit process. Do not go through the rest of the validations if one is found to violate the rules. Otherwise, go through with the submission. The submission should be made to the EchoAll servlet given in Question 1.
 

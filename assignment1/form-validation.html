@@ -7,22 +7,22 @@
 	<h1>Form Validation</h1>
 <form name="formTest" onsubmit="validateZip()">
 	<!-- text input for name -->
-	First name: <input type="text" name="firstName"><br>
-	Last name: <input type="text" name="lastName"><br>
+	First name: <input type="text" name="firstName" required><br>
+	Last name: <input type="text" name="lastName" required><br>
 
 	<!-- radio button for gender -->
 	Gender<br>
-	Female: <input type="radio" name="gender" value="female"><br>
-	Male: <input type="radio" name="gender" value="male"><br>
+	Female: <input type="radio" name="gender" value="female" required><br>
+	Male: <input type="radio" name="gender" value="male" required><br>
 
 	<!-- text input for email -->
-	Email: <input type="text" name="email"><br>
+	Email: <input type="text" name="email" required><br>
 
 	<!-- text input for zip code -->
-	Zip Code: <input type="text" name="zipCode" id="zipCode"><br>
+	Zip Code: <input type="text" name="zipCode" id="zipCode" required><br>
 
 	<!-- select for age range -->
-	<select required>
+	<select required required>
 		<option value="">Select an age range</option>
 		<option value="range1">Below 18</option>
 		<option value="range2">18-39</option>
@@ -33,11 +33,6 @@
 	<input type="submit" value="Submit">
 	<input type="reset" value="Reset">
 </form>
-
-<ol>
-	<li>Make sure fields are non-empty - uses HTML5 attribute</li>
-</ol>
-	
 </body>
 </html>
 <!--

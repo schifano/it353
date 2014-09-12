@@ -13,7 +13,6 @@
 	<script src="scripts/calcTestScores.js"></script>
 	<script src="scripts/computeTotalPay.js"></script>
 	<script src="scripts/displayPage.js"></script>
-
 </head>
 <body>
 
@@ -41,13 +40,12 @@ Name:
 Password: <input type="password" name="pw"><br>
 <!-- Check Box -->
 <p>Where did you hear about our hackathon?</p>
-<input type="checkbox" name="ad1" value="acm">ACM<br>
-<input type="checkbox" name="ad2" value="fb">Facebook<br>
-<input type="checkbox" name="ad3" value="twitter">Twitter<br>
-<input type="checkbox" name="ad4" value="friend">Friend<br>
-<input type="checkbox" name="ad5" value="email">Email<br>
-Other, please specify: <input type="text" name="other"><br>
-
+	<input type="checkbox" name="ad1" value="acm">ACM<br>
+	<input type="checkbox" name="ad2" value="fb">Facebook<br>
+	<input type="checkbox" name="ad3" value="twitter">Twitter<br>
+	<input type="checkbox" name="ad4" value="friend">Friend<br>
+	<input type="checkbox" name="ad5" value="email">Email<br>
+	Other, please specify: <input type="text" name="other"><br>
 <!-- Radio Button -->
 <p>Travel Arrangements</p>
 	<input type="radio" name="travel" id="bus" value="bus">
@@ -56,7 +54,6 @@ Other, please specify: <input type="text" name="other"><br>
   <label for="own">I will provide my own transportation.</label><br>
 	<input type="radio" name="travel" id="campus" value="campus">
   <label for="campus">I am already in Bloomington-Normal, IL.</label>
-
 <!-- Select, dropdown -->
 <p>Shirt size</p>
 <select id="size" name="size">
@@ -65,14 +62,11 @@ Other, please specify: <input type="text" name="other"><br>
   <option value="large">L</option>
   <option value="extra-large">XL</option>
 </select>
-
 <!-- Hidden field, submit value for user -->
 <input type="hidden" id="language" name="language" value="English">
-
 <!-- Multiple line text input -->
 <p>Additional hackers on your team (list emails)</p>
 <textarea name="team" id="team" value="team"></textarea><br>
-
 <!-- Submit Button -->
 <input type="submit" value="Submit">
 <!-- Reset Button -->

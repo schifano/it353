@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+	<title>Special Online Session on Java</title>
+</head>
+<body>
+
+Review questions:
+
+What is the purpose of using the NumberFormat class in the app?
+What data structure is used to model a shopping cart and what is the initial capacity of this data structure?
+When a shopping cart reaches its initial capacity, what happens?
+Explain in plain English how the data structure "stretches" to accommodate more items if/when it reaches the initial capacity.
+Identify all the static methods used in the app.
+If the ShoppingCart constructor was changed in the following manner, what would happen? Briefly explain.
+
+public ShoppingCart() { 
+   capacity = 3; 
+   itemCount = 0; 
+   totalPrice = 0.0; 
+   Item[] cart = new Item[capacity]; 
+} 
+
+Briefly describe the purpose of using an "interface" in Java.
+Assume that the Item class above implements an interface called "Discountable," which has the method signature 
+
+public double discount(); // this method tells the amount of discount to give (0.10 means 10% discount)
+
+What changes must be made to the item class? Make up a simple logic for the discount method.
+Assume that Item class indeed implements Discountable (a la question 8 above), does the following method compile and run properly? Briefly explain.
+
+public void addToCart(String itemName, double price, int quantity) { 
+   Item anItem = new Item(itemName, price, quantity); 
+   cart[itemCount++] = anItem; 
+   totalPrice += price * (1 - anItem.discount()) * quantity; 
+   if (itemCount == capacity) { increaseSize(); } 
+}
+ 
+Assume that Item class indeed implements Discountable (a la question 8 above), does the following statements compile and run properly? Briefly explain.
+
+Discountable item = new Item(itemName, price, quantity); 
+if (item.discount() > 0.20) 
+    System.out.println("...");
+</body>
+</html>

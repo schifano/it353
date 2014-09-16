@@ -1,44 +1,79 @@
 <!doctype html>
 <head>
 	<title>Special Online Session on Java</title>
+	<style>
+
+	</style>
 </head>
 <body>
 
-Review questions:
+<h1>Review questions</h1>
 
-What is the purpose of using the NumberFormat class in the app?
-What data structure is used to model a shopping cart and what is the initial capacity of this data structure?
-When a shopping cart reaches its initial capacity, what happens?
-Explain in plain English how the data structure "stretches" to accommodate more items if/when it reaches the initial capacity.
-Identify all the static methods used in the app.
-If the ShoppingCart constructor was changed in the following manner, what would happen? Briefly explain.
+<h2>What is the purpose of using the NumberFormat class in the app?</h2>
+<p>The NumberFormat class converts numbers into a String with a specified format.</p>
 
+<h2>What data structure is used to model a shopping cart and what is the initial capacity of this data structure?</h2>
+
+<p>The data structure used to model the shopping cart is an array, and the initial capacity of the array is 3. Each item is an Item object with the properties of a name, price, and quantity. The Item objects are stored in the array.</p>
+
+<h2>When a shopping cart reaches its initial capacity, what happens?</h2>
+<p>When the shopping cart reaches its initial capacity, the method increaseSize() is called.</p>
+
+<h2>Explain in plain English how the data structure "stretches" to accommodate more items if/when it reaches the initial capacity.</h2>
+
+<p>When the increaseSize() method is called, it creates a temporary array using the current capacity size, doubles the capacity size variable, copies all the current array items into the temporary array, creates a new cart array with the new capacity size, and then copies items from the temporary array into the new array in order to create the new cart with double the capacity size. This behavior is very similar to a vector in C++, which is also an array, except that 
+
+<h2>Identify all the static methods used in the app.</h2>
+<ul>
+	<li>main()</li>
+	<li>increaseSize()</li>
+</ul>
+
+<h2>If the ShoppingCart constructor was changed in the following manner, what would happen? Briefly explain.</h2>
+<pre>
 public ShoppingCart() { 
    capacity = 3; 
    itemCount = 0; 
    totalPrice = 0.0; 
    Item[] cart = new Item[capacity]; 
 } 
+</pre>
+<p>If the cart is declared within the constructor, it will be limited in scope to that constructor and not accessible anywhere else.</p>
 
-Briefly describe the purpose of using an "interface" in Java.
-Assume that the Item class above implements an interface called "Discountable," which has the method signature 
+<h2>Briefly describe the purpose of using an "interface" in Java.</h2>
+<p>Interfaces allow an object to have multiple identities, or in otherwords, they can help simulate multiple inheritance.</p>
 
+<h2>Assume that the Item class above implements an interface called "Discountable," which has the method signature:</h2>
+
+<pre>
 public double discount(); // this method tells the amount of discount to give (0.10 means 10% discount)
+</pre>
 
-What changes must be made to the item class? Make up a simple logic for the discount method.
-Assume that Item class indeed implements Discountable (a la question 8 above), does the following method compile and run properly? Briefly explain.
+<p>What changes must be made to the item class? Make up a simple logic for the discount method.</p>
+<pre>
+public class Item implements Discountable {
+	public double discount() {
+		double discount = (price * 0.10);
+		price = (price - discount);
+	}
+}
+</pre>
 
+<h2>Assume that Item class indeed implements Discountable (a la question 8 above), does the following method compile and run properly? Briefly explain.</h2>
+<pre>
 public void addToCart(String itemName, double price, int quantity) { 
    Item anItem = new Item(itemName, price, quantity); 
    cart[itemCount++] = anItem; 
    totalPrice += price * (1 - anItem.discount()) * quantity; 
    if (itemCount == capacity) { increaseSize(); } 
 }
- 
-Assume that Item class indeed implements Discountable (a la question 8 above), does the following statements compile and run properly? Briefly explain.
+</pre>
 
-Discountable item = new Item(itemName, price, quantity); 
-if (item.discount() > 0.20) 
-    System.out.println("...");
+<h2>Assume that Item class indeed implements Discountable (a la question 8 above), does the following statements compile and run properly? Briefly explain.</h2>
+<pre>
+	Discountable item = new Item(itemName, price, quantity); 
+	if (item.discount() > 0.20) 
+		System.out.println("...");
+</pre>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<head>
+	<title>Username Check</title>
+	<script>
+	function checkUsername(aName) {
+		var currentName = aName.value;
+		var names = ["aaa111","bbb222","ccc333"];
+		var tempName;
+		var i;
+		for (i = 0; i < names.length; i++) {
+			tempName = names[i];
+			if (tempName == currentName) {
+				alert("Username already taken.");
+				return -1;
+			}
+		}
+	}
+	</script>
+</head>
+<body>
+	<form name="myForm">
+		Username: <input type="text" id="username" onkeyup="checkUsername(this)">
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- [10 pts] Write a JavaScript program that can process of an array of names (in the format: "firstName LastName") and randomly display a name upon clicking a button. Since this is intended to be a tool that an instructor can use to randomly call upon students to participate in class discussions, be sure to (a) design your display to be large enough for the entire class to see on the projector (i.e. a simple "alert" won't do!), b) allow one to pick a different name by clicking the button, and c) aesthetically pleasing to watch (e.g., slot machine effects, perhaps?). You may hardcode the array of names in your program. Bells and whistles welcome here (bonus pts)! -->
+<!doctype html>
+<head>
+	<title>Lab 2</title>
+	<link href="styles/random.css" rel="stylesheet">
+	<script src="scripts/jquery-2.1.1.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		/* array of names */
+		var arr = ['Rachel Schifano', 'Beary Bear', 'Sonny Moore', 'DJ Ravine', 'Dillon Francis',
+							 'Steve Jobs', 'Jessica Livingston', 'Adora Cheung', 'Austin Savage',
+							 'Kasey Gandham', 'Julia Hartz', 'Elli Sharef', 'Elizabeth Iorns', 'Deadmau5',
+							 'Gregg Pollack', 'Gina Turner', 'Neil Degrasse Tyson', 'Marissa Mayer',
+							 'Shoaib Hannani', 'Steve Mask', 'Tallyn Turnbow', 'Michael Austin'];
+
+		for(i = 0; i < arr.length; i++) {
+			console.log(arr[i]);
+		}
+
+		$( "div" ).append( "<strong>Hello</strong>" );
+	}
+	</script>
+</head>
+<body>
+
+<div></div>
+<a href="" onClick="randomNames()">Run</a>
+
+</body>
+</html>

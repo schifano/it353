@@ -5,17 +5,33 @@ Your job is to write a segment of JavaScript code that will detect which radio b
 <head>
 	<title>Button Selected</title>
 	<script>
+	function buttonSelected() {
+		var radios = document.getElementsByTagName('input');
+		var value;
+		var checked = 0;
+		for (var i = 0; i < radios.length; i++) {
+		   if (radios[i].type === 'radio' && radios[i].checked) {
+		      value = radios[i].value;    
+		      alert(value);
+		      checked++;
+	    }
+		}
+		if (checked == 0) {
+			alert("No selection given!");
+		}
+	}
 	</script>
 </head>
 <body>
 <form name="myForm">
-	<input type="radio" id="1" value="1">Male<br>
-	<input type="radio" id="2" value="2">Female
-	<input type="radio" id="2" value="3">
-	<input type="radio" id="2" value="4">
-	<input type="radio" id="2" value="5">
-	<input type="radio" id="2" value="6">
-	<input type="radio" id="2" value="7">
+	<input type="radio" id="1" value="0">Great Pyramid of Giza<br>
+	<input type="radio" id="2" value="1">Hanging Gardens of Babylon<br>
+	<input type="radio" id="2" value="2">Statue of Zeus at Olympia<br>
+	<input type="radio" id="2" value="3">Temple of Artemis at Ephesus<br>
+	<input type="radio" id="2" value="4">Mausoleum at Halicarnassus<br>
+	<input type="radio" id="2" value="5">Colossus of Rhodes<br>
+	<input type="radio" id="2" value="6">Lighthouse of Alexandria<br>
+	<input type="submit" value="Submit" onClick="buttonSelected()">
 </form>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!-- [10 pts] Create a select object that allows for multiple selections. Specifically, create one that allows for 5 separate toppings to be chosen for a pizza order (make these up!). Upon clicking on a button, you need to popup a window (just use the confirm method) to display the user’s choice of toppings and ask if the choice is correct or not. -->
+<!doctype html>
+<head>
+	<title>Select Multiple</title>
+	<script src="scripts/jquery-2.1.1.min.js"></script>
+	<script>
+	function confirmToppings() {
+		var arr = [];
+		var i;
+		var j = 0;
+		var toppingsList = "\n";
+		$('#toppings option:selected').each(function() {
+    	arr[j] = $(this).val();
+    	j++;
+		});
+		for (i = 0; i < arr.length; i++) {
+			toppingsList += arr[i];
+			toppingsList += "\n"
+		}
+		confirm("Are these toppings correct?" + toppingsList);
+	}
+	</script>
+	<style>
+	select {
+		height: 75px;
+	}
+	</style>
+</head>
+<body>
+	<form name="myForm">
+		<select id="toppings" multiple>
+		  <option value="Pepperoni">Pepperoni</option>
+		  <option value="Onions">Onions</option>
+		  <option value="Green Peppers">Green Peppers</option>
+		  <option value="Sausage">Sausage</option>
+		  <option value="Pineapple">Pineapple</option>
+		</select><br>
+		<input type="submit" onClick="confirmToppings(this)">
+	</form>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+</body>
+</html>
+

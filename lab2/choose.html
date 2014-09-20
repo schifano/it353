@@ -1,0 +1,32 @@
+<!-- [10 pts: Select] Write a JavaScript program to present the user with a drop-down list and when the user chooses an item from the list, go to the associated link for the item. Create the list with 4 items ("Choose a dept", "Dept A", "Dept B", and "Dept C") and go to deptA.htm, deptB.htm, and deptC.htm, respectively, when the user chooses Dept A, Dept B, and Dept C. (You are to provide the dummy pages for deptA.htm, detB.htm, and deptC.htm.) Otherwise, don't do anything. Hint: use the onChange event handler and perhaps the "location" object/property. -->
+<!doctype html>
+<head>
+	<title>Choose Department</title>
+	<script>
+	function goToLink() {
+		var x = document.getElementById("selectDept").value;
+		switch(x) {
+			case "DeptA":
+				window.location.href = 'depta.html';
+				break;
+			case "DeptB":
+				window.location.href = 'deptb.html';
+				break;
+			case "DeptC":
+				window.location.href = 'deptc.html';
+				break;
+			default:
+			 return -1;
+		}
+	}
+	</script>
+</head>
+<body>
+<select id="selectDept" onchange="goToLink()">
+	<option value="">Select a department
+  <option value="DeptA">Dept A
+  <option value="DeptB">Debt B
+  <option value="DeptC">Debt C
+</select>
+</body>
+</html>

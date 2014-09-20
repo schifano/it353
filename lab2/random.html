@@ -7,24 +7,43 @@
 	<script>
 	$(document).ready(function() {
 		/* array of names */
-		var arr = ['Rachel Schifano', 'Beary Bear', 'Sonny Moore', 'DJ Ravine', 'Dillon Francis',
+		var arr = ['Rachel Schifano', 'Sonny Moore', 'DJ Ravine', 'Dillon Francis',
 							 'Steve Jobs', 'Jessica Livingston', 'Adora Cheung', 'Austin Savage',
 							 'Kasey Gandham', 'Julia Hartz', 'Elli Sharef', 'Elizabeth Iorns', 'Deadmau5',
 							 'Gregg Pollack', 'Gina Turner', 'Neil Degrasse Tyson', 'Marissa Mayer',
 							 'Shoaib Hannani', 'Steve Mask', 'Tallyn Turnbow', 'Michael Austin'];
 
-		for(i = 0; i < arr.length; i++) {
-			console.log(arr[i]);
+		var divs = document.getElementsByTagName("div");
+		for(var i = 0; i < arr.length; i++){
+		   divs[i].innerHTML = arr[i];
 		}
-
-		$( "div" ).append( "<strong>Hello</strong>" );
+	});
+	function randomNames() {
 	}
 	</script>
 </head>
 <body>
-
-<div></div>
-<a href="" onClick="randomNames()">Run</a>
+<div id="name1"></div>
+<div id="name2"></div>
+<div id="name3"></div>
+<div id="name4"></div>
+<div id="name5"></div>
+<div id="name6"></div>
+<div id="name7"></div>
+<div id="name8"></div>
+<div id="name9"></div>
+<div id="name10"></div>
+<div id="name11"></div>
+<div id="name12"></div>
+<div id="name13"></div>
+<div id="name14"></div>
+<div id="name15"></div>
+<div id="name16"></div>
+<div id="name17"></div>
+<div id="name18"></div>
+<div id="name19"></div>
+<div id="name20"></div>
+<button onClick="randomNames()">Run</button>
 
 </body>
 </html>

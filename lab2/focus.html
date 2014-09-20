@@ -1,0 +1,57 @@
+<!-- 
+[3 pts] When the second radio button is checked, the first text field is to be set in focus.
+[3 pts] When any of the three text fields is in focus (e.g., when one clicks on one of them), the second radio button is to be checked.
+[4 pts] In order for the form to be submitted (via Search, which is a submit button), either the first radio button must be checked or one or more of the text fields must be non-empty. If the submit process is to be aborted, provide an alert window to state the reason for non-submission and set the first text field to be in focus.
+
+To dynamically check a button, use the example given at http://www.itk.ilstu.edu/faculty/bllim/js/dynamicRadioCheck.htm 
+-->
+<!doctype html>
+<head>
+	<title>Focus</title>
+	<script src="scripts/jquery-2.1.1.min.js"></script>
+	<script>
+	function focusText1() {
+		$("#text1").focus();
+	}
+	function checkRadio2() {
+		var radioButton = document.getElementById("radio2");
+		radioButton.checked = true;
+	}
+	function validateForm() {
+		var radioButton = document.getElementById("radio1");
+		var checkBox1 = document.getElementById("text1").value;
+		var checkBox2 = document.getElementById("text2").value;
+		var checkBox3 = document.getElementById("text3").value;
+		var count = 0;
+		// if at least first radio button is not checked, see if other fields are empty
+		if (radioButton.checked == true) {
+			return -1;
+		}
+		if (checkBox1 != "") {
+				count++;
+		}
+		if (checkBox2 != "") {
+			count++;
+		}
+		if (checkBox3 != "") {
+			count++;
+		}
+		if (count < 1) {
+			$("#text1").focus();
+			alert("At least one or more text fields must be filled OR select the Search ALL airlines button.");
+		}
+	}
+	</script>
+</head>
+<body>
+<p>Indicate the search preference below:</p>
+<form>
+	<input type="radio" id="radio1" value="allChecked">Search ALL airlines<br>
+	<input type="radio" id="radio2" value="indiv" onClick="focusText1()">Search for ONLY the airline(s):<br><br>
+	Choice 1: <input type="text" id="text1" onClick="checkRadio2()"><br>
+	Choice 2: <input type="text" id="text2" onClick="checkRadio2()"><br>
+	Choice 3: <input type="text" id="text3" onClick="checkRadio2()"><br><br>
+	<input type="submit" value="Search" onClick="validateForm()">
+</form>
+</body>
+</html>

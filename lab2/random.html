@@ -13,37 +13,23 @@
 							 'Gregg Pollack', 'Gina Turner', 'Neil Degrasse Tyson', 'Marissa Mayer',
 							 'Shoaib Hannani', 'Steve Mask', 'Tallyn Turnbow', 'Michael Austin'];
 
-		var divs = document.getElementsByTagName("div");
 		for(var i = 0; i < arr.length; i++){
-		   divs[i].innerHTML = arr[i];
+		   var divElement = document.createElement("div");
+		   document.getElementById("names").appendChild(divElement);
+		   divElement.innerHTML = arr[i];
 		}
 	});
-	function randomNames() {
+	function randomName() {
+		var randomNum = (Math.random() * document.getElementById("names").childNodes.length).toFixed(0);
+		console.log(randomNum);
+
+		document.getElementById("names").childNodes[randomNum].style.backgroundColor = "yellow";
+		document.getElementById("names").childNodes[randomNum].scrollIntoView();
 	}
 	</script>
 </head>
 <body>
-<div id="name1"></div>
-<div id="name2"></div>
-<div id="name3"></div>
-<div id="name4"></div>
-<div id="name5"></div>
-<div id="name6"></div>
-<div id="name7"></div>
-<div id="name8"></div>
-<div id="name9"></div>
-<div id="name10"></div>
-<div id="name11"></div>
-<div id="name12"></div>
-<div id="name13"></div>
-<div id="name14"></div>
-<div id="name15"></div>
-<div id="name16"></div>
-<div id="name17"></div>
-<div id="name18"></div>
-<div id="name19"></div>
-<div id="name20"></div>
-<button onClick="randomNames()">Run</button>
-
+<button onClick="randomName()">Run</button>
+<section id="names"></section>
 </body>
 </html>

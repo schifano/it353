@@ -1,0 +1,108 @@
+<!doctype html>
+<head>
+	<title>Web Quiz</title>
+	<link href="styles/style.css" rel="stylesheet">
+	<script src="scripts/jquery-2.1.1.min.js"></script>
+	<script src="scripts/checkAnswers.js"></script>
+</head>
+<body>
+<div id="container">
+<h1>Web Development Quiz</h1>
+<form id="quizForm" onsubmit="checkAnswers()">
+<section>
+<h2>Multiple Choice</h2>
+<ol>
+	<li>Of the following, which is NOT supported by HTML5?
+		<ul>
+			<li><input type="radio" name="multiple1" value="0">&lt;!doctype html&gt;</li>
+			<li><input type="radio" name="multiple1" value="0">&lt;article&gt;</li>
+			<li><input type="radio" name="multiple1" value="1">&lt;center&gt;</li>
+			<li><input type="radio" name="multiple1" value="0">&lt;footer&gt;</li>
+			<li><input type="radio" name="multiple1" value="0">All of the above.</li>
+		</ul>
+	</li>
+	<li>Of the following, which is considered a managed, server-side component architecture for modular construction of enterprise applications?
+		<ul>
+			<li><input type="radio" name="multiple2" value="1">Enterprise Java Beans (EJB)</li>
+			<li><input type="radio" name="multiple2" value="0">Java 2 Platform, Enterprise Edition (J2EE)</li>
+			<li><input type="radio" name="multiple2" value="0">Java Enterprise Edition (Java EE)</li>
+			<li><input type="radio" name="multiple2" value="0">JavaServer Pages (JSP)</li>
+			<li><input type="radio" name="multiple2" value="0">Common Gateway Interface (CGI)</li>
+		</ul>
+	</li>
+	<li>Of the following, which is considered a DOM event handler?
+		<ul>
+			<li><input type="radio" name="multiple3" value="0">onload</li>
+			<li><input type="radio" name="multiple3" value="0">onclick</li>
+			<li><input type="radio" name="multiple3" value="0">onhover</li>
+			<li><input type="radio" name="multiple3" value="0">onmouseover</li>
+			<li><input type="radio" name="multiple3" value="1">All of the above.</li>
+		</ul>
+	</li>
+</ol>
+</section>
+
+<section>
+<h2>True or False</h2>
+<ol start="4">
+	<li>
+			<select name="tf">
+				<option value=""></option>
+				<option value="0">True</option>
+				<option value="1">False</option>
+			</select>	JavaScript and Java are basically the same programming language.
+	</li>
+	<li>
+			<select name="tf">
+				<option value=""></option>
+				<option value="0">True</option>
+				<option value="1">False</option>
+			</select>	In case of method overriding, methods with the same name co-exists in same class but they must have different method signature.
+	</li>
+	<li>
+			<select name="tf">
+				<option value=""></option>
+				<option value="1">True</option>
+				<option value="0">False</option>
+			</select>	Interfaces cannot be instantiated, but rather are implemented. A class that implements an interface must implement all of the methods described in the interface, or be an abstract class.
+	</li>
+</ol>
+</section>
+
+<section>
+<h2>Fill in the Blanks</h2>
+<p>The following example describes the concept of Model View Controller. Fill in the blank with the appropriate corresponding term: model, view, or controller.</p>
+<ol start="7">
+	<li>The browser is responsible for combining and rendering the CSS and HTML into a set of final, manipulatible pixels on the screen. It gathers input from the user and marshals it to any JavaScript code necessary for the page to function. But here, too, we have flexibility: we can plug in a different browser and get comparable results. Some browsers might render it faster, or with more fidelity, or with more bells and whistles.
+	<br><input type="text"></li>
+	<li>The HTML is the "skeleton" of bedrock content. Text that communicates information to the reader.
+	<br><input type="text"></li>
+	<li>The CSS adds visual style to the content. It is the "skin" that we use to flesh out our skeleton and give it a particular look. We can swap in different skins via CSS without altering the original content in any way. They are relatively, but not completely, independent.
+	<br><input type="text"></li>
+</ol>
+</section>
+<button type="reset" value="Reset" class="reset">Reset</button>
+<button type="submit" value="Submit" class="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+
+<!-- 
+
+3 True/False (to be implemented as drop down lists; do NOT pre-select an answer)
+	
+	2. Method overloading and method overriding in Java is two important concept in Java which allows Java programmer to declare method with same name but different behavior. Method overloading and method overriding is based on polymorphism in Java.
+
+Read more: http://javarevisited.blogspot.com/2011/12/method-overloading-vs-method-overriding.html#ixzz3EXHdboPO ....called method OVERRIDING ? F: (overloading)
+
+3 Fill in the blanks (accept both upper and lower cases))
+
+	1. define model
+	2. define view
+	3. define controller
+
+pertain to Web Development Technologies (not other general topics)
+
+-->
